@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+:root {
+	--section-color: #fcf8f8;
+	--primary-color: #303030;
+	--section-1: #1E1E1E;
+	--section-2: #282828;
+	--section-3: #323232;
+	--section-4: #3C3C3C;
+	--section-5: #464646;
+}
+
+body {
+	padding-top: 70px;
+	/* Adjust this value to accommodate the navbar height */
+	overflow-x: hidden;
+	background-color: var(--section-1);
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+}
+
+.bird_lottie_animation {
+	position: absolute;
+	/*	z-index: 1;
+	max-height: 100%;*/
+}
+
+.loading-lottie-animation{
+	width: 20%;
+	height: auto;
+}
+
+.header {
+	position: relative;
+	/*  height: 50vh;*/
+	/* Set a maximum width to contain the header content */
+
+	background-color: var(--section-1);
+	padding-bottom: 12px;
+}
+
+.header-img-container {
+	max-height: 50vh;
+	/* Ensure the container doesn't exceed the height of the header */
+}
+
+.header-information-container {
+	position: relative;
+	/* Use relative positioning to keep it within the header */
+	z-index: 2;
+	max-width: 100%;
+	/* Ensure content stays within the header */
+	max-height: 100%;
+	/* Ensure the container doesn't exceed the height of the header */
+}
+
+.header-img-container img {
+	max-width: 100%;
+	/* Ensure the image doesn't exceed the width of its container */
+	max-height: 100%;
+	/* Ensure the image doesn't exceed the height of its container */
+	display: block;
+	/* Remove any extra space below the image */
+	margin: 0 auto;
+	/* Center the image horizontally within the container */
+}
+
+p {
+	margin: 0;
+	/* Remove default margin for the paragraph */
+	color: white;
+}
+
+.experience {
+	background-color: var(--section-2);
+	height: 50vh;
+}
+
+.skills {
+	background-color: var(--section-2);
+}
+
+.education {
+	background-color: var(--section-3);
+	height: 50vh;
+}
+
+.projects {
+	background-color: var(--section-3);
+}
+
+.summary {
+	align-self: center;
+}
+
+.section {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.skills-container div{
+	text-align: center;
+}
+.skills-container div img{
+	width: 50%;
+	height: auto;
+}
+.card {
+	background-color: var(--section-5);
+}
+
+.table {
+	background-color: var(--section-5);
+}
+
+.list-group-item {
+	background-color: var(--section-5);
+}
+
+th,
+td {
+	background: var(--section-5) !important;
+	vertical-align: middle;
+	color: white !important;
+}
+
+
+.project-card-container {
+	padding: 8px;
+}
+
+.project-card-container .card {
+	align-items: center;
+}
+
+.project-card-container .card .table thead tr th {
+	/*text-align: center;*/
+	vertical-align: middle;
+	/*	width: 50%;*/
+}
+
+/*.project-card-container .card .table thead tr th img{
+	height: 200px;
+	width: auto;
+}*/
+.scroll-container {
+	cursor: grab;
+	/*overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	position: relative;
+	 Required for pseudo-elements 
+	-webkit-overflow-scrolling: touch;*/
+	/* Enable smooth scrolling on iOS devices */
+}
+
+.scroll-container div img {
+	/*max-width: 200px;  Set maximum width for each image */
+	width: auto !important;
+	height: 140px;
+	/*margin-right: 57px;*/
+	/*Add some spacing between images*/
+	-webkit-user-drag: none;
+	user-drag: none;
+	user-select: none;
+	/*Disable text selection */
+	-moz-user-select: none;
+	/*Disable text selection for Firefox */
+	-ms-user-select: none;
+	/*Disable text selection for IE/Edge */
+	-webkit-user-select: none;
+	/*Disable text selection for WebKit browsers*/
+	touch-action: none;
+}
+
+.swiper-container-free-mode {
+	width: 100%;
+	/* Set width to fill the column */
+	overflow: hidden;
+	/* Hide overflowing content */
+}
+
+.swiper-container-free-mode .swiper-wrapper {
+	display: flex;
+	/* Use flexbox for the wrapper */
+}
+
+.swiper-container-free-mode .swiper-slide {
+	flex-shrink: 0;
+	/* Prevent slides from shrinking */
+	height: 100%;
+	width: 100px;
+
+}
+
+.swiper-container-free-mode .swiper-wrapper .swiper-slide img {
+	width: auto !important;
+	height: 140px;
+}
+
+.swiper {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.scroll-container-projects {
+	justify-content: center;
+}
+
+.swiper-container-project-demo {
+	width: 30%;
+	/* Set width to fill the available space */
+	padding-bottom: 30px;
+	height: auto;
+}
+
+.swiper-container-project-demo .swiper-wrapper .swiper-slide {
+	width: auto;
+	flex-shrink: 0;
+	/* Prevent slides from shrinking */
+	height: 100%;
+}
+
+.swiper-container-project-demo .swiper-wrapper .swiper-slide img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+/* Loader styles */
+/*.loader {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--section-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+/* Loader animation (customize as needed) */
+/*.loader::after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}*/
+
+/*@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}*/
+
+/* Hide content initially */
+/*.content {
+  visibility: hidden;
+}*/
+
+/* .circular-image {
+    border-radius: 50%; Makes the image circular
+    object-fit: cover; Maintains image aspect ratio and fills the container
+    border: 2px solid #fff; Add a border if desired
+} */
