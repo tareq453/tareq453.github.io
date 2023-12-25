@@ -17,7 +17,7 @@ body {
 	background-color: var(--section-1);
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	color: #000;
+	color: white;
 }
 
 .bird_lottie_animation {
@@ -184,4 +184,15 @@ td {
 
 .account-link a{
 	margin: 8px;
+}
+
+.btn-cv{
+	width: 50%;
+	margin-bottom: 16px;
+	margin-top: 16px;
+	margin-left: 16px;
+}
+
+footer{
+	text-align: center;
 }
