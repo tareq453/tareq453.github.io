@@ -185,7 +185,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-6 col-sm-12 project-card-container" data-aos="flip-left">
+					<div class="col-md-6 col-sm-12 project-card-container" data-aos="fade-right">
 						<div class="card shadow ">
 							<!--Mood Project -->
 							<table class="table card-body">
@@ -216,7 +216,7 @@
 
 								</tbody>
 							</table>
-							<div class="swiper-container-project-demo">
+							<div class="swiper-container-project-demo swiper-container-project-demo-mood">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<img src="images/projects/mood/1.png" />
@@ -237,11 +237,12 @@
 										<img src="images/projects/mood/6.png" />
 									</div>
 								</div>
+								<div class="swiper-pagination-mood"></div>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-6 col-sm-12 project-card-container" data-aos="flip-right">
+					<div class="col-md-6 col-sm-12 project-card-container" data-aos="fade-left">
 						<div class="card shadow ">
 							<!--Driving Training System -->
 							<table class="table card-body">
@@ -274,7 +275,7 @@
 
 								</tbody>
 							</table>
-							<div class="swiper-container-project-demo">
+							<div class="swiper-container-project-demo swiper-container-project-demo-dts">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<img src="images/projects/mood/1.png" />
@@ -295,11 +296,13 @@
 										<img src="images/projects/mood/6.png" />
 									</div>
 								</div>
+								
+								<div class="swiper-pagination-dts"></div>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-6 col-sm-12 project-card-container" data-aos="flip-left">
+					<div class="col-md-6 col-sm-12 project-card-container" data-aos="fade-right">
 						<div class="card shadow ">
 							<!--	 Money Guard -->
 							<table class="table card-body">
@@ -331,7 +334,7 @@
 
 								</tbody>
 							</table>
-							<div class="swiper-container-project-demo">
+							<div class="swiper-container-project-demo swiper-container-project-demo-mg">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<img src="images/projects/mood/1.png" />
@@ -352,12 +355,13 @@
 										<img src="images/projects/mood/6.png" />
 									</div>
 								</div>
+								<div class="swiper-pagination-mg"></div>
 							</div>
 						</div>
 
 					</div>
 
-					<div class="col-md-6 col-sm-12 project-card-container" data-aos="flip-right">
+					<div class="col-md-6 col-sm-12 project-card-container" data-aos="fade-left">
 						<div class="card shadow ">
 							<!-- Size -->
 							<table class="table card-body">
@@ -388,7 +392,7 @@
 
 								</tbody>
 							</table>
-							<div class="swiper-container-project-demo">
+							<div class="swiper-container-project-demo swiper-container-project-demo-size">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<img src="images/projects/mood/1.png" />
@@ -409,6 +413,7 @@
 										<img src="images/projects/mood/6.png" />
 									</div>
 								</div>
+								<div class="swiper-pagination-size"></div>
 							</div>
 						</div>
 
@@ -495,7 +500,7 @@
 
 		AOS.init();
 
-		var swiper1 = new Swiper(".swiper-container-project-demo", {
+		/*var swiper1 = new Swiper(".swiper-container-project-demo", {
 			effect: "cards",
 			grabCursor: true,
 			autoplay: {
@@ -503,6 +508,133 @@
 				disableOnInteraction: true,
 			},
 			lazy: true
+		});*/
+
+
+/*		var swiper = new Swiper(".swiper-container-project-demo", {
+			slidesPerView: 3,
+			spaceBetween: 30,
+			grabCursor: true,
+			freeMode: true,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			lazy: true
+		}); */
+
+
+
+		var swiper1 = new Swiper(".swiper-container-project-demo-mood", {
+			effect: "cards",
+			grabCursor: true,
+			/*autoplay: {
+				delay: 2500,
+				disableOnInteraction: true,
+			},*/
+			lazy: true,
+			pagination: {
+				el: ".swiper-pagination-mood",
+				clickable: true,
+			},
+			/*breakpoints: {
+				640: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 4,
+					spaceBetween: 40,
+				},
+				1024: {
+					slidesPerView: 5,
+					spaceBetween: 50,
+				},
+			},*/
+		});
+		
+		var swiper2 = new Swiper(".swiper-container-project-demo-dts", {
+			effect: "cards",
+			grabCursor: true,
+			/*autoplay: {
+				delay: 2500,
+				disableOnInteraction: true,
+			},*/
+			lazy: true,
+			pagination: {
+				el: ".swiper-pagination-dts",
+				clickable: true,
+			},
+		/*	breakpoints: {
+				640: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 6,
+					spaceBetween: 40,
+				},
+				1024: {
+					slidesPerView: 6,
+					spaceBetween: 50,
+				},
+			},*/
+		});
+		
+		var swiper3 = new Swiper(".swiper-container-project-demo-mg", {
+			effect: "cards",
+			grabCursor: true,
+			/*autoplay: {
+				delay: 2500,
+				disableOnInteraction: true,
+			},*/
+			lazy: true,
+			pagination: {
+				el: ".swiper-pagination-mg",
+				clickable: true,
+			},
+			/*breakpoints: {
+				640: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 4,
+					spaceBetween: 40,
+				},
+				1024: {
+					slidesPerView: 5,
+					spaceBetween: 50,
+				},
+			},*/
+		});
+		
+		var swiper4 = new Swiper(".swiper-container-project-demo-size", {
+			effect: "cards",
+			grabCursor: true,
+			/*autoplay: {
+				delay: 2500,
+				disableOnInteraction: true,
+			},*/
+			lazy: true,
+			pagination: {
+				el: ".swiper-pagination-size",
+				clickable: true,
+			},
+			/*breakpoints: {
+				640: {
+					slidesPerView: 4,
+					spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 4,
+					spaceBetween: 40,
+				},
+				1024: {
+					slidesPerView: 5,
+					spaceBetween: 50,
+				},
+			},*/
 		});
 
 

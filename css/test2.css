@@ -26,7 +26,7 @@ body {
 	max-height: 100%;*/
 }
 
-.loading-lottie-animation{
+.loading-lottie-animation {
 	width: 20%;
 	height: auto;
 }
@@ -101,16 +101,19 @@ p {
 	padding-bottom: 12px;
 }
 
-.contact{
+.contact {
 	background-color: var(--section-4);
 }
-.skills-container div{
+
+.skills-container div {
 	text-align: center;
 }
-.skills-container div img{
+
+.skills-container div img {
 	width: 50%;
 	height: auto;
 }
+
 .card {
 	background-color: var(--section-5);
 }
@@ -171,28 +174,43 @@ td {
 	width: 100%;
 	height: auto;
 	object-fit: cover;
+	-webkit-user-drag: none;
+	user-drag: none;
+	user-select: none;
+	/*Disable text selection */
+	-moz-user-select: none;
+	/*Disable text selection for Firefox */
+	-ms-user-select: none;
+	/*Disable text selection for IE/Edge */
+	-webkit-user-select: none;
+	/*Disable text selection for WebKit browsers*/
+	touch-action: none;
 }
 
-.sumbit{
+.sumbit {
 	margin-top: 8px;
 }
 
-.account-link{
+.account-link {
 	text-align: center;
 	margin-top: 10px;
 }
 
-.account-link a{
+.account-link a {
 	margin: 8px;
 }
 
-.btn-cv{
+.btn-cv {
 	width: 50%;
 	margin-bottom: 16px;
 	margin-top: 16px;
 	margin-left: 16px;
 }
 
-footer{
+footer {
+	text-align: center;
+}
+
+.swiper-pagination-size, .swiper-pagination-mg, .swiper-pagination-dts, .swiper-pagination-mood{
 	text-align: center;
 }
